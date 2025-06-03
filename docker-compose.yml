@@ -14,7 +14,7 @@ services:
       - /frontend/node_modules
     networks:
       - app-network
-      
+
   backend-app:
     container_name: backend-app
     build:
@@ -26,8 +26,6 @@ services:
     volumes:
       - ./backend:/var/www/html
       - /var/www/html/vendor
-    depends_on:
-      - mysql
     networks:
       - app-network
 
