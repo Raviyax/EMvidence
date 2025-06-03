@@ -1,4 +1,4 @@
-export const API_URL = "https://api.emvidence.raviyax.site/api/v1";
+export const API_URL = "https://apiemvidence.raviyax.site/api/v1";
 
 // React Query Keys
 export const queryKeys = {
