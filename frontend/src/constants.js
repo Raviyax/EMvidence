@@ -1,4 +1,4 @@
-export const API_URL = "http://150.230.141.154:8000/api/v1";
+export const API_URL = "https://api.emvidence.raviyax.site/api/v1";
 
 // React Query Keys
 export const queryKeys = {
