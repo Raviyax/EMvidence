@@ -1,0 +1,41 @@
+# Docker - START
+
+// To remove all stopped containers
+docker container prune --force
+
+// To remove dangling images
+docker image prune --force
+
+// To remove all unused images
+docker image prune -a --force
+
+// To remove all unused volumes
+docker volume prune --force
+
+// To remove all unused networks
+docker network prune --force
+
+// To clear Docker-related data
+docker system prune -a --volumes --force
+
+// Starts Docker containers defined in a Docker Compose file, builds images if needed, and runs containers in the background.
+docker-compose up -d --build
+
+# Docker - END
+
+# Database - START
+
+// To run database migrations
+php artisan migrate
+
+// To seed the database with test or dummy data
+php artisan db:seed
+
+# Database - END
+
+# backend - START
+
+// Start the schdule task
+php artisan schedule:work
+
+# backend - END 
